@@ -5,12 +5,15 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
+    "app:deploy": "npm run build && cd ./cdk-deployment && cdk deploy",
+    "app:destroy": "cd ./cdk-deployment && cdk destroy --force",
     "preview": "npm run build && vite preview",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
     "lint": "eslint --ignore-path .gitignore --fix src",
-    "prettier": "prettier src --write"
+    "prettier": "prettier src --write",
+    "postinstall": "cd cdk-deployment && npm install"
   },
   "dependencies": {
     "@emotion/react": "^11.9.3",

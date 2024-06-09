@@ -1,3 +1,9 @@
+
+# Deployed project link
+
+-[Cloudfront](https://di5s1enruwe63.cloudfront.net)
+-[S3 bucket](https://cdkdeploymentstack-rsschooldeploymentreact15252c2f-myvu6ei8kbzx.s3.us-east-1.amazonaws.com/)
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
@@ -16,6 +22,14 @@ This is frontend starter project for nodejs-aws mentoring program. It uses the f
 - [TypeScript](https://www.typescriptlang.org/) as a type checking tool
 
 ## Available Scripts
+
+### `app:deploy`
+
+Starts the project CDK deployment to AWS.
+
+### `app:destroy`
+
+Destroys the project cloudformation stack created on AWS.
 
 ### `start`
 
